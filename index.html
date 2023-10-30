@@ -5,29 +5,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Index</title>
+	<title>My Portfolio || Rayhan F</title>
 
-	<!-- Bootstrap CSS -->
+	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-	<!-- Bootstrap Icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
 
-	<!-- Font Awesome CSS -->
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-	<!-- Font Awesome JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
 		integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- Styling -->
 	<link href="assets/style.css" rel="stylesheet">
@@ -59,9 +58,10 @@
 
 	<!-- Jumbotron -->
 	<section class="jumbotron text-center">
-		<img class="rounded-circle img-thumbnail" src="assets/img/image.jpg" alt="Profile" width="200">
-		<h1 class="display-4">Rayhan F</h1>
-		<p class="lead">Mahasiwa | Sering gabut</p>
+		<img class="rounded-circle img-thumbnail" src="assets/img/image.jpg" alt="Profile" width="200"
+			data-aos="flip-right">
+		<h1 class="display-4"><span id="typed1"></span></h1>
+		<p class="lead">Seorang <span id="typed2"></span></p>
 
 		<!-- Social media -->
 		<div class="fs-2">
@@ -86,17 +86,17 @@
 	<!-- About -->
 	<section id="about">
 		<div class="container">
-			<div class="row text-center mb-3">
-				<div class="col">
+			<div class="row text-center mb-3 mb-md-5">
+				<div class="col" data-aos="fade-in">
 					<h2>Tentang Saya</h2>
 				</div>
 			</div>
 			<div class="row justify-content-evenly fs-5 text-center">
-				<div class="col-md-5">
+				<div class="col-md-5" data-aos="fade-down" data-aos-delay="300">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem nemo ad quos suscipit reiciendis
 						obcaecati expedita consectetur quibusdam a?</p>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-5" data-aos="fade-up" data-aos-delay="500">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quaerat consequuntur nisi fugiat, ea nam
 						dolore asperiores magni itaque ad velit aut ex omnis animi.</p>
 				</div>
@@ -113,14 +113,14 @@
 	<!-- Projects -->
 	<section id="projects">
 		<div class="container">
-			<div class="row text-center mb-3">
-				<div class="col">
+			<div class="row text-center mb-3 mb-md-5">
+				<div class="col" data-aos="fade-in">
 					<h2>Proyek Saya</h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-4 mb-3">
-					<div class="card">
+					<div class="card" data-aos="flip-up">
 						<img src="assets/img/project1.png" class="card-img-top" alt="Convert GDrive URL" onmouseover="zoomIn(this)"
 							onmouseout="zoomOut(this)" onclick="imgOpen(this)">
 						<div class="card-body">
@@ -131,7 +131,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 mb-3">
-					<div class="card">
+					<div class="card" data-aos="flip-down">
 						<img src="assets/img/project2.png" class="card-img-top" onmouseover="zoomIn(this)"
 							onmouseout="zoomOut(this)" onclick="imgOpen(this)">
 						<div class="card-body">
@@ -142,7 +142,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 mb-3">
-					<div class="card">
+					<div class="card" data-aos="flip-up">
 						<img src="assets/img/project3.png" class="card-img-top" onmouseover="zoomIn(this)"
 							onmouseout="zoomOut(this)" onclick="imgOpen(this)">
 						<div class="card-body">
@@ -153,7 +153,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 mb-3">
-					<div class="card">
+					<div class="card" data-aos="flip-left">
 						<img src="assets/img/project4.jpeg" class="card-img-top" onmouseover="zoomIn(this)"
 							onmouseout="zoomOut(this)" onclick="imgOpen(this)">
 						<div class="card-body">
@@ -164,7 +164,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 mb-3">
-					<div class="card">
+					<div class="card" data-aos="flip-right">
 						<img src="assets/img/project5.jpeg" class="card-img-top" onmouseover="zoomIn(this)"
 							onmouseout="zoomOut(this)" onclick="imgOpen(this)">
 						<div class="card-body">
@@ -187,17 +187,18 @@
 	<!-- Contacts -->
 	<section id="contact">
 		<div class="container">
-			<div class="row text-center mb-3">
-				<div class="col">
+			<div class="row text-center mb-3 mb-md-5">
+				<div class="col" data-aos="fade-in">
 					<h2>Hubungi Saya</h2>
 				</div>
 			</div>
 			<div class="row justify-content-center mb-3">
-				<div class="col-md-8 bg-light border rounded-3 p-3">
+				<div class="col-md-8 bg-light border rounded-3 p-3" data-aos="fade-in" data-aos-delay="300"
+					data-aos-offset="200">
 					<form class="needs-validation" novalidate>
 						<div class="mb-3">
 							<label for="nama" class="form-label">Nama</label>
-							<input type="text" class="form-control" name="nama" id="nama" placeholder="Rayhan F" required>
+							<input type="text" class="form-control" name="nama" id="nama" placeholder="Your name here" required>
 							<p class="invalid-feedback">
 								Nama tidak boleh kosong.
 							</p>
@@ -212,8 +213,7 @@
 						</div>
 						<div class="mb-3">
 							<label for="message" class="form-label">Pesan</label>
-							<textarea class="form-control" id="message" rows="3" style="height: 17px"
-								placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptate."
+							<textarea class="form-control" id="message" rows="3" style="height: 17px" placeholder="Your message here"
 								required></textarea>
 							<p class="invalid-feedback">
 								Pesan tidak boleh kosong.
@@ -243,6 +243,29 @@
 
 	<!-- Contact Validate -->
 	<script src="assets/js/contact-validate.js"></script>
+
+	<!-- Typed JS -->
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	<script>
+		var typed1 = new Typed('#typed1', {
+			strings: ["Rayhan F"],
+			typeSpeed: 60
+		});
+		var typed2 = new Typed('#typed2', {
+			strings: ["mahasiswa", "yang sering gabut"],
+			typeSpeed: 40,
+			backSpeed: 100,
+			loop: true
+		});
+	</script>
+
+	<!-- AOS Init -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 2000,
+		});
+	</script>
 </body>
 
 </html>
