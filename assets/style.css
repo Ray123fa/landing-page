@@ -11,3 +11,6 @@ section {
 #projects img {
   cursor: pointer;
 }
+.typed-cursor {
+  color: #0d6efd;
+}
